@@ -1,12 +1,16 @@
 import React, { Component } from 'react'
 import styled, { ThemeProvider, injectGlobal } from 'styled-components';
-// import Header from '../components/Header';
+import Header from '../components/Header';
 import Meta from '../components/Meta';
 
 const theme = {
-  red: '#FF0000',
+  red: '#ed1b24',
   black: '#393939',
   grey: '#3A3A3A',
+  darkblue: '#23408e',
+  blue: '#385399',
+  grey: '#cccccc',
+  white: '#ffffff',
   lightgrey: '#E1E1E1',
   lightGrey: '#E1E1E1',
   offWhite: '#EDEDED',
@@ -58,7 +62,7 @@ export default class Page extends Component {
       <ThemeProvider theme={theme}>
         <StyledPage>
           <Meta />
-          {/* <Header /> */}
+          <Header />
           <Inner>{this.props.children}</Inner>
         </StyledPage>
       </ThemeProvider>
