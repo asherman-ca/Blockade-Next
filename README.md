@@ -1,5 +1,4 @@
-# Blockade Front Ent
-
+# Blockade front end stack:
 -Apollo_Graphql
-  -Next
-    -React
+-Next
+-React
