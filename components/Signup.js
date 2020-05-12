@@ -1,3 +1,4 @@
+import Router from 'next/router';
 import Link from 'next/link';
 import React, { Component } from 'react';
 import { Mutation } from 'react-apollo';
@@ -42,10 +43,13 @@ export default class Signup extends Component {
           <Form method="post" onSubmit={async e => {
             e.preventDefault();
             await signup();
-            this.setState({
-              name: '',
-              email: '',
-              password: '',
+            // this.setState({
+            //   name: '',
+            //   email: '',
+            //   password: '',
+            // })
+            Router.push({
+              pathname: '/',
             })
           }}>
             <fieldset disabled={loading} aria-busy={loading}>

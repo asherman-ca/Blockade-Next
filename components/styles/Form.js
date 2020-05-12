@@ -41,6 +41,7 @@ const Form = styled.form`
   }
   button,
   input[type='submit'] {
+    cursor: pointer;
     width: auto;
     background: ${props => props.theme.blue};
     color: white;
