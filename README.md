@@ -1,4 +1,4 @@
 # Blockade front end stack:
-data: Apollo_Graphql
-framework: Next
-library: React
+- data: Apollo_Graphql
+- framework: Next
+- library: React
