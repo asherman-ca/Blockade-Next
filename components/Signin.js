@@ -3,6 +3,7 @@ import Router from 'next/router';
 import React, { Component } from 'react';
 import { Mutation } from 'react-apollo';
 import gql from 'graphql-tag';
+import User from './User';
 import Form from './styles/Form';
 import Error from './ErrorMessage';
 import { CURRENT_USER_QUERY } from './User';
@@ -42,15 +43,14 @@ export default class Signin extends Component {
           { query: CURRENT_USER_QUERY }
         ]}
       >
-        {(signup, { loading, error }) => (
+        {(signin, { loading, error }) => (
           <Form method="post" onSubmit={async e => {
             e.preventDefault();
-            await signup();
-            // this.setState({
-            //   name: '',
-            //   email: '',
-            //   password: '',
-            // })
+            await signin();
+            this.setState({
+              email: '',
+              password: '',
+            })
             Router.push({
               pathname: '/',
             })

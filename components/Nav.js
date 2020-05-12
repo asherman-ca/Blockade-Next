@@ -8,7 +8,7 @@ import Signout from './Signout';
 
 const Nav = () => (
   <User>
-     {({data: { me }}) => (
+     {({data: { me }}) => console.log(me) || (
       <NavStyles data-test="nav">
         <Link href="/items">
           <a>Shop</a>
