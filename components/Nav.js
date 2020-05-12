@@ -25,6 +25,9 @@ const Nav = () => (
             <Link href="/me">
               <a>Account</a>
             </Link>
+            <Link href="/signin">
+              <a>Sign In</a>
+            </Link>
             {/* <Signout /> */}
             {/* <Mutation mutation={TOGGLE_CART_MUTATION}>
               {(toggleCart) => (
