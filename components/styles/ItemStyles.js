@@ -8,6 +8,7 @@ const Item = styled.div`
   display: flex;
   flex-direction: column;
   img {
+    padding: 10px;
     width: 100%;
     height: 400px;
     object-fit: cover;
