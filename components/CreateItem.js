@@ -28,11 +28,11 @@ const CREATE_ITEM_MUTATION = gql`
 
 class CreateItem extends Component {
   state = {
-    title: 'cool shoes',
-    description: 'description words',
+    title: '',
+    description: '',
     image: '',
     largeImage: '',
-    price: 5000,
+    price: 0,
   }
 
   handleChange = e => {
@@ -40,11 +40,6 @@ class CreateItem extends Component {
     const val = type === 'number' ? parseFloat(value) : value;
     this.setState({ [name]: val });
   }
-
-// TODO 4/21/20: check that image is done uploading before allowing item submission
-// TODO 4/21/20: instead of previewing just the image - preview the full card as it will appear
-// TODO: cache invalidation - need to invalidate cache on item creation or delete. currently the pages get busted and user most likely needs to refresh.
-// current best solution is fetchpolicy="network-only" on the items query but then no speed benefit from caching
 
   uploadFile = async e => {
     console.log('uploading file...');
@@ -95,7 +90,7 @@ class CreateItem extends Component {
               </label>
 
               <label htmlFor="title">
-                Title
+                {/* Title */}
                 <input 
                   type="text" 
                   id="title" 
@@ -108,7 +103,7 @@ class CreateItem extends Component {
               </label>
 
               <label htmlFor="price">
-                Price
+                {/* Price */}
                 <input 
                   type="number" 
                   id="price" 
@@ -121,7 +116,7 @@ class CreateItem extends Component {
               </label>
 
               <label htmlFor="description">
-                Description
+                {/* Description */}
                 <textarea 
                   type="text" 
                   id="description" 

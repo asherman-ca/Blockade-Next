@@ -33,7 +33,6 @@ class TakeMyMoney extends React.Component {
     console.log('res', res)
     console.log('On Token Called!')
     console.log(res.id)
-    // manually call the mutation once we have the stripe token
     const order = await createOrder({
       variables: {
         token: res.id,
@@ -49,7 +48,6 @@ class TakeMyMoney extends React.Component {
   };
   render() {
     return (
-      // user component to expose the user's cart
       <User>
         {({ data: { me } }) => (
           <Mutation
