@@ -59,7 +59,6 @@ export default class Signin extends Component {
               <h2>Sign in to your account</h2>
               <Error error={error} />
                 <label htmlFor="email">
-                  Email
                   <input 
                     type="email"
                     name="email"
@@ -69,7 +68,6 @@ export default class Signin extends Component {
                   />
                 </label>  
                 <label htmlFor="password">
-                  Password
                   <input 
                     type="password"
                     name="password"

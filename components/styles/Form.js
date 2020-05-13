@@ -49,10 +49,6 @@ const Form = styled.form`
     font-size: 2rem;
     font-weight: 600;
     padding: 0.5rem 1.2rem;
-    &:hover{
-      transition: all .5s;
-      transform: scale(.975);
-    }
   }
   fieldset {
     border: 0;
