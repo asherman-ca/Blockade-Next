@@ -79,7 +79,12 @@ export default class Signin extends Component {
                   />
                 </label>
 
-                <button type="submut">Sign In</button>
+                <button type="submit">Sign In</button>
+                <Link href="/requestreset">
+                  <a>
+                    <p>Forgot password?</p>
+                  </a>
+                </Link>
                 <Link href="/signup">
                   <a>
                     <p>Need an account?</p>
