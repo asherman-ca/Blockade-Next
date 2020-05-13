@@ -56,7 +56,6 @@ export default class Items extends Component {
             </ItemsList>
           }}
         </Query>
-        <Pagination page={this.props.page} />
       </Center>
     )
   }

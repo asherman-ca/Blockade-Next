@@ -8,17 +8,13 @@ const Item = styled.div`
   display: flex;
   flex-direction: column;
   img {
-    padding: 10px;
+    padding: 10px 10px 0px 10px;
     width: 100%;
     height: 400px;
     object-fit: cover;
   }
   p {
-    line-height: 2;
-    font-weight: 300;
-    flex-grow: 1;
-    padding: 0 3rem;
-    font-size: 1.5rem;
+    margin-block-start: 0px;
   }
   .buttonList {
     display: grid;
