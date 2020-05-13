@@ -1,5 +1,7 @@
-const Home = props => (
-  <div>Hello</div>
-)
+import Items from '../components/Items';
 
-export default Home
+const Home = props => (
+    <Items page={parseFloat(props.query.page) || 1} />
+);
+
+export default Home;
