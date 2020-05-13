@@ -8,10 +8,7 @@ const PleaseSignIn = props => {
       if(loading)return<p>loading...</p>
       if(!data.me) {
         return (
-          <div>
-            <p>Please Sign in before continueing</p>
-            <Signin />
-          </div>
+          <Signin />
         )
       }
       return props.children;
