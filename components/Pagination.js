@@ -28,7 +28,7 @@ const Pagination = (props) => (
       const page = props.page;
       return <PaginationStyles data-test="pagination">
         <Head>
-          <title>Sick fits | Page {page} / {pages}</title>
+          <title>Blockade | Page {page} / {pages}</title>
         </Head>
         <Link 
           prefetch

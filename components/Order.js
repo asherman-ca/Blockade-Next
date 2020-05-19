@@ -45,7 +45,7 @@ class Order extends React.Component {
             <OrderStyles>
               {/* this is a side effect, which change things outside our control in react */}
               <Head>
-                <title>Sick Fits - Order {order.id}</title>
+                <title>Blockade - Order {order.id}</title>
               </Head>
               <p>
                 <span>Order ID:</span>
